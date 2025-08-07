@@ -1,0 +1,107 @@
+:root {
+  /* Ana Renkler */
+  --primary-color: #0d6efd; /* Ana marka rengi (butonlar, linkler, vurgular) */
+  --primary-text-contrast: #ffffff; /* Ana renk üzerindeki metin rengi */
+  
+  /* Arka Plan Renkleri */
+  --page-bg: #f8f9fa; /* Sayfanın genel arka planı */
+  --card-bg: #ffffff; /* Kart gibi bileşenlerin arka planı */
+  --card-header-bg: #ffffff; /* Kart başlıklarının arka planı */
+
+  /* Metin Renkleri */
+  --text-color: #212529; /* Ana metin rengi */
+  --text-muted-color: #6c757d; /* İkincil, daha az önemli metinler */
+  --heading-color: #1a202c; /* Başlıklar için renk */
+
+  /* Kenarlık ve Ayırıcı Renkleri */
+  --border-color: #dee2e6; /* Kart, input gibi elemanların kenarlıkları */
+
+  /* Form Elemanları */
+  --input-bg: #ffffff;
+  --input-border-color: #ced4da;
+  --input-text-color: #495057;
+  --input-focus-border-color: #86b7fe;
+
+  /* Geçiş Efekti */
+  --theme-transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* ==========================================================================
+   Dark Theme (Koyu Tema)
+   ========================================================================== */
+.theme-dark {
+  --primary-color: #6c75fd;
+  --primary-text-contrast: #ffffff;
+  
+  --page-bg: #121212;
+  --card-bg: #1e1e1e;
+  --card-header-bg: #2a2a2a;
+
+  --text-color: #e0e0e0;
+  --text-muted-color: #a0a0a0;
+  --heading-color: #ffffff;
+
+  --border-color: #444444;
+
+  --input-bg: #2a2a2a;
+  --input-border-color: #555555;
+  --input-text-color: #e0e0e0;
+  --input-focus-border-color: #6c75fd;
+}
+
+/* ==========================================================================
+   Blue Theme (Mavi Tema)
+   ========================================================================== */
+.theme-blue {
+  --primary-color: #1e88e5;
+  --primary-text-contrast: #ffffff;
+  
+  --page-bg: #e3f2fd;
+  --card-bg: #ffffff;
+  --card-header-bg: #ffffff;
+  
+  --text-color: #0d47a1;
+  --text-muted-color: #42a5f5;
+  --heading-color: #0b3d8c;
+
+  --border-color: #bbdefb;
+
+  --input-bg: #ffffff;
+  --input-border-color: #90caf9;
+  --input-text-color: #0d47a1;
+  --input-focus-border-color: #1e88e5;
+}
+
+/* ==========================================================================
+   Green Theme (Yeşil Tema)
+   ========================================================================== */
+.theme-green {
+  --primary-color: #43a047;
+  --primary-text-contrast: #ffffff;
+
+  --page-bg: #e8f5e9;
+  --card-bg: #ffffff;
+  --card-header-bg: #ffffff;
+
+  --text-color: #1b5e20;
+  --text-muted-color: #66bb6a;
+  --heading-color: #0c4b10;
+
+  --border-color: #c8e6c9;
+
+  --input-bg: #ffffff;
+  --input-border-color: #a5d6a7;
+  --input-text-color: #1b5e20;
+  --input-focus-border-color: #43a047;
+}
+
+/* ==========================================================================
+   Global Stil Uygulaması
+   ========================================================================== */
+
+body {
+  background-color: var(--page-bg);
+  color: var(--text-color);
+  transition: var(--theme-transition);
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}

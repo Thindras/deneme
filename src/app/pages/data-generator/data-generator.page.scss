@@ -1,0 +1,65 @@
+// Kart stillerini tema değişkenleriyle uyumlu hale getir
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  transition: var(--theme-transition);
+
+  .card-header {
+    background-color: var(--primary-color);
+    color: var(--primary-text-contrast);
+    border-bottom: 1px solid var(--border-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .card-body {
+    .form-label {
+      color: var(--heading-color);
+    }
+    .text-muted {
+      color: var(--text-muted-color) !important;
+    }
+  }
+
+  .card-footer {
+    background-color: var(--card-header-bg);
+    border-top: 1px solid var(--border-color);
+  }
+}
+
+// Form elemanlarını tema değişkenleriyle uyumlu hale getir
+.form-check-input {
+  background-color: var(--input-bg);
+  border-color: var(--input-border-color);
+  &:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+}
+
+.form-select, .form-control {
+  background-color: var(--input-bg);
+  border: 1px solid var(--input-border-color);
+  color: var(--input-text-color);
+  &:focus {
+    background-color: var(--input-bg);
+    color: var(--input-text-color);
+    border-color: var(--input-focus-border-color);
+  }
+}
+
+// Buton stillerini tema değişkenleriyle uyumlu hale getir
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--primary-text-contrast);
+}
+
+// Kod önizleme alanını tema değişkenleriyle uyumlu hale getir
+pre {
+  background-color: var(--page-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-muted-color);
+  white-space: pre-wrap;
+  word-break: break-all;
+}
